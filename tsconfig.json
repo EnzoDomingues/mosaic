@@ -1,13 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "baseUrl": "src",
+    "target": "es2017",
     "lib": [
       "dom",
       "dom.iterable",
       "esnext"
     ],
+    "types": [
+      "node"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
+    "removeComments": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
@@ -18,9 +23,14 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "pretty": true
   },
   "include": [
-    "src"
+    "src",
+    "src/store"
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
