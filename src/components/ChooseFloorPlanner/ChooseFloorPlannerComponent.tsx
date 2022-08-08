@@ -137,7 +137,6 @@ const ChooseFloorPlanner: React.FC<IChooseFloorPlannerProps> = ({
               rows={4}
               value={valueOtherInfo}
               onChange={handleChangeOtherInfo}
-              defaultValue="Default Value"
             />
           </Box>
         </div>

@@ -27,7 +27,7 @@ const HomeScreen: React.FC = () => {
   const addFloorPlanner = async () => {
     try {
       const floorPlanner = {
-        name: 'Floor Planner 10',
+        name: 'Floor Planner 11',
         photo: 'https://floor-planners.s3.amazonaws.com/floor10.jpeg',
         description: '4 bed, 2 bath • 2,300 sq. ft.',
       }
