@@ -4,6 +4,7 @@ import styled from 'styled-components'
 export const ListFloorPlannersWrapper = styled.div`
   position: relative;
   margin: auto;
+  min-height: 100vh;
   max-width: 1440px;
 
   h2 {
