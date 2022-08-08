@@ -2,6 +2,16 @@
   "components": {
     "header" : {
       "title": "Bem vindo ao meu teste"
+    },
+    "listFloorPlanner": {
+      "title": "Construa sua casa com a gente"
+    },
+    "chooseFloorPlanner": {
+      "title": "Escolha o planejador de piso melhor para você",
+      "button": "Enviar"
     }
+  },
+  "home": {
+    "addItem": "Adicionar novo item"
   }
 }

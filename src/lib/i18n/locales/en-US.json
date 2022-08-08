@@ -2,6 +2,16 @@
   "components": {
     "header" : {
       "title": "Welcome to my test"
+    },
+    "listFloorPlanner": {
+      "title": "Build your home with us"
+    },
+    "chooseFloorPlanner": {
+      "title": "Choose the best floor planner for you",
+      "button": "Send"
     }
+  },
+  "home": {
+    "addItem": "Add new item"
   }
 }

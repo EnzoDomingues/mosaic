@@ -2,12 +2,12 @@ export const lightTheme = {
   typography: {
     fontFamily: 'Montserrat',
     h1: {
-      fontSize: '30px',
+      fontSize: '32px',
       fontWeight: '700',
       lineHeight: '61px',
     },
     h2: {
-      fontSize: '26px',
+      fontSize: '28px',
       fontWeight: '500',
       lineHeight: '44px',
     },
@@ -27,6 +27,7 @@ export const lightTheme = {
       n100: '#21343d',
       n080: '#0E1425',
       n060: '#414851',
+      n030: '#979797',
       n020: '#868B90',
       n003: '#f7f6ee',
       n000: '#fff',

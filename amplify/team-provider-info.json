@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mosaic-dev-132406-authRole",
+      "UnauthRoleArn": "arn:aws:iam::616925931290:role/amplify-mosaic-dev-132406-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::616925931290:role/amplify-mosaic-dev-132406-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-mosaic-dev-132406-deployment",
+      "UnauthRoleName": "amplify-mosaic-dev-132406-unauthRole",
+      "StackName": "amplify-mosaic-dev-132406",
+      "StackId": "arn:aws:cloudformation:us-east-1:616925931290:stack/amplify-mosaic-dev-132406/5d22ee10-166d-11ed-a90e-1276981038b3",
+      "AmplifyAppId": "d3dzkv7c5ra3pn"
+    }
+  }
+}

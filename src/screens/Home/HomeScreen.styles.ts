@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
-export const PanelContainer = styled.div`
-  padding-top: 45px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 36px;
+export const ButtonWrapper = styled.div`
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
 `

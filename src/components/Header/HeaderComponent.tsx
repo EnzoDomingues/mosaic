@@ -13,8 +13,7 @@ interface IHeaderProps {
 }
 
 const Header: React.FC<IHeaderProps> = ({ title }) => {
-  const { selectedLanguage, setSelectedLanguage } = useChangeLanguage()
-  console.log('selectedLanguage', selectedLanguage)
+  const { setSelectedLanguage } = useChangeLanguage()
 
   return (
     <HeaderBG>
