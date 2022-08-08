@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useCallback, useState } from 'react'
 
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
@@ -48,7 +48,7 @@ const ChooseFloorPlanner: React.FC<IChooseFloorPlannerProps> = ({
     setChoosedPlanner(planner.id)
   }
 
-  const sendChoosedPlan = async () => {
+  const sendChoosedPlan = useCallback(async () => {
     try {
       const choosedFloorPlanner: IChoosedFloorPlan = {
         name: valueName,
@@ -69,7 +69,7 @@ const ChooseFloorPlanner: React.FC<IChooseFloorPlannerProps> = ({
     } catch (err) {
       console.log('error sending floor planner:', err)
     }
-  }
+  }, [choosedPlanner, valueEmail, valueName, valueOtherInfo])
 
   return (
     <ChooseFloorPlannerWrapper>

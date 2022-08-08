@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 
 import Button from '@mui/material/Button'
 import { API, graphqlOperation } from 'aws-amplify'
@@ -24,23 +24,25 @@ export interface IFloorPlanner {
 const HomeScreen: React.FC = () => {
   const [floorPlanners, setFloorPlanners] = useState<IFloorPlanner[]>([])
 
-  const addFloorPlanner = async () => {
+  const addFloorPlanner = useCallback(async () => {
     try {
       const floorPlanner = {
-        name: 'Floor Planner 11',
-        photo: 'https://floor-planners.s3.amazonaws.com/floor10.jpeg',
-        description: '4 bed, 2 bath • 2,300 sq. ft.',
+        name: 'Floor Planner 12',
+        photo: 'https://floor-planners.s3.amazonaws.com/floor1.jpeg',
+        description: '2 bed, 2 bath • 1,300 sq. ft.',
       }
-      await API.graphql(
+      const res: any = await API.graphql(
         graphqlOperation(createFloorPlanner, { input: floorPlanner }),
       )
+
+      setFloorPlanners([...floorPlanners, res?.data?.createFloorPlanner])
       console.log('done')
     } catch (err) {
       console.log('error creating floor planner:', err)
     }
-  }
+  }, [floorPlanners])
 
-  const fetchFloorPlanner = async () => {
+  const fetchFloorPlanner = useCallback(async () => {
     try {
       const floorData: any = await API.graphql(
         graphqlOperation(listFloorPlanners),
@@ -59,11 +61,11 @@ const HomeScreen: React.FC = () => {
     } catch (err) {
       console.log('error fetching floor planner')
     }
-  }
+  }, [])
 
   useEffect(() => {
     fetchFloorPlanner()
-  }, [])
+  }, [fetchFloorPlanner])
 
   return (
     <Wrapper>

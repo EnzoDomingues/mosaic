@@ -1,6 +1,6 @@
 export const lightTheme = {
   typography: {
-    fontFamily: 'Montserrat',
+    fontFamily: 'Zilla Slab',
     h1: {
       fontSize: '32px',
       fontWeight: '700',

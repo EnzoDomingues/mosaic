@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { ReactComponent as BRIcon } from 'assets/img/icon-br.svg'
 import { ReactComponent as USAIcon } from 'assets/img/icon-usa.svg'
@@ -29,6 +30,7 @@ const Header: React.FC<IHeaderProps> = ({ title }) => {
           </div>
         </div>
         <div className="header-buttons">
+          <Link to={'add-item'}>Add item </Link>
           <button onClick={() => setSelectedLanguage('en-US')}>
             <USAIcon width={50} height={50} />
           </button>
